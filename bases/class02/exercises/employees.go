@@ -15,14 +15,14 @@ func Employees() {
 	fmt.Println(employees)
 	fmt.Println(employees["Benjamin"])
 
-	var countAgeBt20 = 0
+	var countAgeBt21 = 0
 	for _, age := range employees {
 		if age > 21 {
-			countAgeBt20++
+			countAgeBt21++
 		}
 	}
 
-	fmt.Println("Há " + fmt.Sprint(countAgeBt20) + " funcionários com mais de 21 anos")
+	fmt.Println("Há " + fmt.Sprint(countAgeBt21) + " funcionários com mais de 21 anos")
 
 	employees["Frederico"] = 25
 	delete(employees, "Pedro")
