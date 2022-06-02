@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "code": "BRPAY",
+        "currency": "BRL",
+        "value": 42.00,
+        "issuer": "",
+        "receiver": "",
+        "createdAt": "2022-06-02"
+    },
+    {
+        "id": 2,
+        "code": "BRPAY",
+        "currency": "BRL",
+        "value": 66.00,
+        "issuer": "",
+        "receiver": "",
+        "createdAt": "2022-06-02"
+    },
+    {
+        "id": 3,
+        "code": "BRPAY",
+        "currency": "BRL",
+        "value": 120.00,
+        "issuer": "",
+        "receiver": "",
+        "createdAt": "2022-06-02"
+    }
+]
