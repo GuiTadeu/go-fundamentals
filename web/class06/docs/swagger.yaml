@@ -1,0 +1,45 @@
+definitions:
+  web.Response:
+    properties:
+      code:
+        type: string
+      data: {}
+      error:
+        type: string
+    type: object
+info:
+  contact: {}
+  description: This API Handle MELI Transactions
+  title: MELI Bootcamp API
+  version: "1.0"
+paths:
+  /transactions:
+    get:
+      consumes:
+      - application/json
+      description: Get All Transactions
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/web.Response'
+      summary: List Transactions
+      tags:
+      - Transactions
+    post:
+      consumes:
+      - application/json
+      description: Create Transaction
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/web.Response'
+      summary: Save Transaction
+      tags:
+      - Transactions
+swagger: "2.0"

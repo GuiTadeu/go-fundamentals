@@ -25,6 +25,14 @@ func NewTransactionHandler(serv transactions.TransactionService) *TransactionHan
 	}
 }
 
+// GetAll godoc
+// @Summary List Transactions
+// @Description Get All Transactions
+// @Tags Transactions
+// @Accept json
+// @Produce json
+// @Success 200 {object} web.Response
+// @Router /transactions [get]
 func (handler *TransactionHandler) GetAll() gin.HandlerFunc {
 	return func(ctx *gin.Context) {
 
@@ -44,6 +52,14 @@ func (handler *TransactionHandler) GetAll() gin.HandlerFunc {
 	}
 }
 
+// Store godoc
+// @Summary Save Transaction
+// @Description Create Transaction
+// @Tags Transactions
+// @Accept json
+// @Produce json
+// @Success 201 {object} web.Response
+// @Router /transactions [post]
 func (handler *TransactionHandler) Store() gin.HandlerFunc {
 	return func(ctx *gin.Context) {
 
