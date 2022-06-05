@@ -1,0 +1,20 @@
+[
+  {
+    "Id": 1,
+    "Code": "BRPAY",
+    "Currency": "BRL",
+    "Value": 220,
+    "Issuer": "batman",
+    "Receiver": "robin",
+    "CreatedAt": "2020-06-04"
+  },
+  {
+    "Id": 2,
+    "Code": "EUAPAY",
+    "Currency": "USD",
+    "Value": 300,
+    "Issuer": "robin",
+    "Receiver": "batman",
+    "CreatedAt": "2020-06-05"
+  }
+]

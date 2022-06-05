@@ -1,6 +1,7 @@
 package handler
 
 import (
+	"os"
 	"strconv"
 
 	"github.com/GuiTadeu/meli-go/web/class04/internal/transactions"
@@ -44,7 +45,7 @@ func (handler *TransactionHandler) GetAll() gin.HandlerFunc {
 	return func(ctx *gin.Context) {
 
 		token := ctx.Request.Header.Get("token")
-		if token != "GOIABA" {
+		if token != os.Getenv("TOKEN") {
 			ctx.JSON(401, gin.H{
 				"error": "unauthorized",
 			})
@@ -67,7 +68,7 @@ func (handler *TransactionHandler) Store() gin.HandlerFunc {
 	return func(ctx *gin.Context) {
 
 		token := ctx.Request.Header.Get("token")
-		if token != "GOIABA" {
+		if token != os.Getenv("TOKEN") {
 			ctx.JSON(401, gin.H{
 				"error": "unauthorized",
 			})
@@ -102,7 +103,7 @@ func (handler *TransactionHandler) Update() gin.HandlerFunc {
 	return func(ctx *gin.Context) {
 
 		token := ctx.Request.Header.Get("token")
-		if token != "GOIABA" {
+		if token != os.Getenv("TOKEN") {
 			ctx.JSON(401, gin.H{
 				"error": "unauthorized",
 			})
@@ -142,7 +143,7 @@ func (handler *TransactionHandler) UpdateCode() gin.HandlerFunc {
 	return func(ctx *gin.Context) {
 
 		token := ctx.Request.Header.Get("token")
-		if token != "GOIABA" {
+		if token != os.Getenv("TOKEN") {
 			ctx.JSON(401, gin.H{
 				"error": "unauthorized",
 			})
@@ -181,7 +182,7 @@ func (handler *TransactionHandler) Delete() gin.HandlerFunc {
 	return func(ctx *gin.Context) {
 
 		token := ctx.Request.Header.Get("token")
-		if token != "GOIABA" {
+		if token != os.Getenv("TOKEN") {
 			ctx.JSON(401, gin.H{
 				"error": "unauthorized",
 			})
