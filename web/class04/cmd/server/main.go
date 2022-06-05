@@ -16,6 +16,9 @@ func main() {
 	transactionsGroup := server.Group("/transactions")
 	transactionsGroup.POST("/", handler.Store())
 	transactionsGroup.GET("/", handler.GetAll())
+	transactionsGroup.PUT("/:id", handler.Update())
+	transactionsGroup.PATCH("/:id", handler.UpdateCode())
+	transactionsGroup.DELETE("/:id", handler.Delete())
 
 	server.Run()
 }

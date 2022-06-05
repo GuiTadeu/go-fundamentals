@@ -3,6 +3,9 @@ package transactions
 type TransactionService interface {
 	GetAll() ([]Transaction, error)
 	Store(code string, currency string, value float64, issuer string, receiver string, createdAt string) (Transaction, error)
+	Update(id uint64, code string, currency string, value float64, issuer string, receiver string, createdAt string) (Transaction, error)
+	UpdateCode(id uint64, code string) (Transaction, error)
+	Delete(id uint64) error
 }
 
 type TransactionServiceImpl struct {
@@ -39,4 +42,19 @@ func (serv *TransactionServiceImpl) Store(
 	}
 
 	return transaction, nil
+}
+
+func (serv *TransactionServiceImpl) Update(
+	id uint64, code string, currency string, value float64,
+	issuer string, receiver string, createdAt string,
+) (Transaction, error) {
+	return serv.repo.Update(id, code, currency, value, issuer, receiver, createdAt)
+}
+
+func (serv *TransactionServiceImpl) UpdateCode(id uint64, code string) (Transaction, error) {
+	return serv.repo.UpdateCode(id, code)
+}
+
+func (serv *TransactionServiceImpl) Delete(id uint64) error {
+	return serv.repo.Delete(id)
 }
