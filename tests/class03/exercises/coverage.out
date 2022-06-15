@@ -1,0 +1,14 @@
+mode: set
+github.com/GuiTadeu/meli-go/tests/class03/exercises/test/service/repository_mock.go:20.63,23.2 2 1
+github.com/GuiTadeu/meli-go/tests/class03/exercises/test/service/repository_mock.go:28.29,43.36 4 1
+github.com/GuiTadeu/meli-go/tests/class03/exercises/test/service/repository_mock.go:51.2,51.64 1 0
+github.com/GuiTadeu/meli-go/tests/class03/exercises/test/service/repository_mock.go:43.36,44.17 1 1
+github.com/GuiTadeu/meli-go/tests/class03/exercises/test/service/repository_mock.go:44.17,48.4 3 1
+github.com/GuiTadeu/meli-go/tests/class03/exercises/test/service/repository_mock.go:54.50,61.33 4 1
+github.com/GuiTadeu/meli-go/tests/class03/exercises/test/service/repository_mock.go:68.2,68.14 1 1
+github.com/GuiTadeu/meli-go/tests/class03/exercises/test/service/repository_mock.go:72.2,73.12 2 1
+github.com/GuiTadeu/meli-go/tests/class03/exercises/test/service/repository_mock.go:61.33,62.31 1 1
+github.com/GuiTadeu/meli-go/tests/class03/exercises/test/service/repository_mock.go:62.31,65.4 2 1
+github.com/GuiTadeu/meli-go/tests/class03/exercises/test/service/repository_mock.go:68.14,70.3 1 1
+github.com/GuiTadeu/meli-go/tests/class03/exercises/test/service/service_mock.go:14.29,16.2 1 1
+github.com/GuiTadeu/meli-go/tests/class03/exercises/test/service/service_mock.go:18.50,20.2 1 1

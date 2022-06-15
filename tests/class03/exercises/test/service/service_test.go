@@ -29,7 +29,7 @@ func TestDelete(t *testing.T) {
 	transactions, _ := mockService.repo.GetAll()
 	assert.Len(t, transactions, 2)
 
-	mockService.Delete(1)
+	_ = mockService.Delete(1)
 	transactions, _ = mockService.repo.GetAll()
 
 	assert.Len(t, transactions, 1)
