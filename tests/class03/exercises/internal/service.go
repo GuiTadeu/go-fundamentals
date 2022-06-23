@@ -1,4 +1,4 @@
-package exercises
+package internal
 
 type TransactionService interface {
 	GetAll() ([]Transaction, error)
